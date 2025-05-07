@@ -1,0 +1,202 @@
+/* header{
+    background-color: rgb(240, 101, 101);
+}
+
+section{
+    background-color: rgb(101, 219, 101);
+}
+
+footer{
+    background-color: rgb(230, 230, 89);
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(196, 19, 19), rgb(190, 50, 50), rgb(20, 20, 20));
+    color: #333;
+  }
+  
+  header, section, footer {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* background-color: #2c3e50; */
+    background: linear-gradient(to right, white, white, #9bacbe, #2c3e50);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 0 0 10px 10px;
+  }
+  
+  .burger{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  #nav-menu{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  .list-nav > a{
+    background-color: #eaf2f8;
+    text-decoration: none;
+    color: red;
+  }
+
+  h1, h2 {
+    color: #2c3e50;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .cursos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .cursos{
+    background: #eaf2f8;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    min-width: 250px;
+  }
+
+  .ver-detalhes{
+    margin-top: 10px;
+    background: #285a8d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .ver-detalhes:hover{
+    background: #1c5d88;
+  }
+
+  .detalhes{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 3px solid #2980b9;
+    border-radius: 5px;
+
+
+  }
+  
+  li {
+    margin-bottom: 15px;
+    background: #eaf2f8;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #contato-items {
+    display: flex;
+    gap: 10px;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px; /* Adicionado para espaçamento nas laterais */
+}
+
+.instagram, .whatsapp {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 15px; /* Reduzido de 20px */
+    text-align: center;
+    min-height: 150px; /* Altura mínima para uniformizar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whatsapp h2 {
+    margin-top: 0; /* Remove margem superior para compactar */
+}
+
+.whatsapp svg {
+    margin-right: 5px; /* Ajuste do ícone */
+}
+
+
+  
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #1c5d88;
+  }
+
+  .btn-inscrever {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+ 
+  
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .cursos.destaque {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 2px solid #b92929;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .cursos.destaque .ver-detalhes {
+    background-color: #1c5d88;
+  }
+
+  
+  
