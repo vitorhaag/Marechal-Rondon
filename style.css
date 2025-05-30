@@ -244,6 +244,12 @@ body {
     font-size: 0.9em;
   }
 
+  footer > p >  a{
+    text-decoration: none;
+    font-weight: 500;
+    color:#333 ;
+  }
+
   .cursos.destaque {
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
